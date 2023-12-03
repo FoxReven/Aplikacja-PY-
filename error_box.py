@@ -27,11 +27,17 @@ class Hellp_box:
                case "E40":
                     os.system("cls")
                     print(f"{self.boot}> Wychodzi na to że powstała pomyłka w klawiszach \n  "
-                          f"{self.boot} > za  5 sekund przeniose cie  do Menu Głównego ")
+                    f"{self.boot} > za  5 sekund przeniose cie  do Menu Głównego ")
                     time.sleep(5)
                     ret=Return()
                     ret.loding()
                     ret._return_Menu()
+               case "Ex802":
+                    os.system("cls")
+                    print(f"{self.boot} > Hmmm bład Ex802 jest spowodowany ponieważ nie ma pod tym klawieszem przypisanej opcji ") 
+                    ret=Return()
+                    ret.loding()
+                    ret._return_Menu()    
 
 
 

@@ -12,7 +12,17 @@ def __Start_app()->None: # Funkcja prywatna która przyjmuje obiekt menu głowne
 def _menu_go(): #odczyt funcki prywatnej 
        __Start_app()
 
+
+
+
+
+
+
+
+
 class menu_start: # obiekt 
+      def __init__(self) -> None:
+            self.key=None
      
       def _menu(self)->str: 
              print("\t\t\tWitamy W aplikajci MXr \n" 
@@ -34,7 +44,7 @@ class menu_start: # obiekt
       def _key_opicon(self)->int:
 
             try : # klawisz 
-                  key=int(input("Kliknij odpowieni kalwisz : "))
+                  self.key=int(input("Kliknij odpowieni kalwisz : "))
 
             except ValueError : # wyłapywanie błednego klawiszuu 
                    os.system("cls")
@@ -60,11 +70,19 @@ class menu_start: # obiekt
                   case 1 : 
                         print("dział w budowie ")
                   case 2: 
-                        pass
+                        print("dział w budowie ")
                   case 3 : 
-                        pass 
+                        print("dział w budowie ")
                   case _ : 
-                        pass  
+                       os.system("cls")
+                       NameError="Ex802" 
+                       print(f"wystąpił  bład :  {NameError} zaraz program cie przeniesie do działu pomocy ")
+                       error="Ex802"
+                       time.sleep(2)
+                       errorbox=Hellp_box(error)
+                       errorbox.menu()
+                       errorbox.loding()
+                       errorbox.error_box()
                          
             
 
