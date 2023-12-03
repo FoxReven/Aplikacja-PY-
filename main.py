@@ -49,7 +49,23 @@ class menu_start: # obiekt
 
             else: # przenoszenie do odpowiedniego działu 
                   os.system('cls')
-                  print("Dział w budowie")                               
+                  self._next_opicon()
+                                               
+            
+
+      def _next_opicon(self)->int: # pole wyboru 
+
+            match  self.key:
+
+                  case 1 : 
+                        print("dział w budowie ")
+                  case 2: 
+                        pass
+                  case 3 : 
+                        pass 
+                  case _ : 
+                        pass  
+                         
             
 
         
