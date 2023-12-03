@@ -2,16 +2,26 @@ import time
 import os
 import sys
 class Hellp_box:
+
+     
      
      def __init__(self,error) -> None: # funkcja która dziedziczy bład z innej  classy
           self.error=error
           self.boot="Robert"
 
 
+
+
+
+
      def menu(self)->str:  #przedstawienie programu 
           os.system("cls")
           print(f"{self.boot} > witam cie w dziale pomocy drogi użytkowniku widze ze wydżył sie jakiś problem" )
     
+
+
+
+
      def loding(self)->None: # funkcja która daje na animacje Lodingu .... 
         print("Loading")     
         animation = "|/-\\"
@@ -19,6 +29,11 @@ class Hellp_box:
             sys.stdout.write("\r" + animation[i % len(animation)])
             sys.stdout.flush()
             time.sleep(0.1) 
+
+
+
+
+
 
      def error_box(self)->str: # wyszukiwarka błedów 
           
